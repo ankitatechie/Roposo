@@ -206,3 +206,24 @@ button {
         margin-right: -5px;
     }
 }
+
+/* Custom css for growl messages */
+.close{
+    display: none;
+}
+.growl {
+    position: fixed;
+    top: initial;
+    right: 0;
+    width: 300px;
+    bottom: 30px;
+    z-index: 9999;
+}
+.alert-success {
+    background-color: green;
+    color: #fff;
+    border-color: green;
+    border-radius: 0px;
+    padding: 12px;
+    text-align: CENTER;
+}

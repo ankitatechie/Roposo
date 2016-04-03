@@ -11,6 +11,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="bower_components/angular-growl/build/angular-growl.min.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -21,6 +22,7 @@
 
 <body ng-app="roposoApp" ng-controller="HeaderCtrl">
     <main></main>
+    <div growl></div>
     <div ng-view=""></div>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -34,6 +36,7 @@
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="bower_components/angular-growl/build/angular-growl.min.js"></script>
     <!-- <script src="bower_components/ng-infinite-scroll/ng-infinite-scroll.js"></script> -->
     <!-- endbower -->
     <!-- endbuild -->

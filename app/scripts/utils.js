@@ -4,8 +4,8 @@
             'LocalStorageModule'
         ])
         .factory('removeProductUtil', [
-            'localStorageService',
-            function(localStorageService) {
+            'localStorageService', 'growl',
+            function(localStorageService, growl) {
                 return function(scopeObject) {
                     return function(product, index) {
                         var products = localStorageService.get('productsInfo');
@@ -17,13 +17,14 @@
                         }
                         localStorageService.set('productsInfo', products);
                         scopeObject.productsInfo = localStorageService.get('productsInfo');
+                        growl.addSuccessMessage("Product removed successfully");
                     }
                 }
             }
         ])
         .factory('addProductUtil', [
-            'localStorageService',
-            function(localStorageService) {
+            'localStorageService', 'growl',
+            function(localStorageService, growl) {
                 return function(scopeObject) {
                     return function() {
                         var products = localStorageService.get('productsInfo');
@@ -36,18 +37,20 @@
                         products.push(newProduct);
                         localStorageService.set('productsInfo', products);
                         scopeObject.productsInfo = localStorageService.get('productsInfo');
+                        growl.addSuccessMessage("Product added successfully");
                     }
                 }
             }
         ])
         .factory('editProductUtil', [
-            'localStorageService',
-            function(localStorageService) {
+            'localStorageService', 'growl',
+            function(localStorageService, growl) {
                 return function(scopeObject) {
                     return function(product, index, reset) {
                         if (!reset) {
                             localStorageService.set('productsInfo', scopeObject.productsInfo);
                             scopeObject.productsInfo = localStorageService.get('productsInfo');
+                            growl.addSuccessMessage("Product edited successfully");
                         }else{
                         	scopeObject.productsInfo = localStorageService.get('productsInfo');
                         }
