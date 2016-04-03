@@ -11,7 +11,8 @@
     "angular-sanitize": "^1.4.0",
     "angular-touch": "^1.4.0",
     "font-awesome": "^4.5.0",
-    "angular-local-storage": "^0.2.7"
+    "angular-local-storage": "^0.2.7",
+    "ng-infinite-scroll": "^0.0.1"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.0"
