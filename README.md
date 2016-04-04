@@ -5,8 +5,12 @@ version 0.15.1.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Run `gulp` for building and `gulp serve` for preview.
 
-## Testing
+## A glimpse to the project
 
-Running `grunt test` will run the unit tests with karma.
+<img src="https://raw.githubusercontent.com/ankitatechie/Roposo/master/app/images/screen-shot.png">
+
+## Click here to see the demo 
+
+<a href="http://ankitatechie.github.io/RoposoWeb">The Demo</a>
