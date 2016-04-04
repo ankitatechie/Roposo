@@ -51,8 +51,8 @@
                             localStorageService.set('productsInfo', scopeObject.productsInfo);
                             scopeObject.productsInfo = localStorageService.get('productsInfo');
                             growl.addSuccessMessage("Product edited successfully");
-                        }else{
-                        	scopeObject.productsInfo = localStorageService.get('productsInfo');
+                        } else {
+                            scopeObject.productsInfo = localStorageService.get('productsInfo');
                         }
                     }
                 }

@@ -3,7 +3,7 @@
 </div>
 <div class="search-box">
     <i id="filtersubmit" class="fa fa-search"></i>
-    <input id="filter" type="text" placeholder="Search" ng-model="main.searchProduct"/>
+    <input id="filter" type="text" placeholder="Search" ng-model="main.searchProduct" />
 </div>
 <section class="gridOne">
     <div class="container-fluid">
@@ -21,7 +21,7 @@
                             <p>{{product.description}}</p>
                         </div>
                         <div class="editable" id="editable">
-                            <input class="title" type="text" ng-model="product.title"></input>
+                            <input class="title" type="text" ng-model="product.title"/>
                             <br>
                             <textarea class="description" type="text" ng-model="product.description"></textarea>
                             <button class="btn" ng-click="main.editProduct(product, $index, 'reset');">Reset</button>
